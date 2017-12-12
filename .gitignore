@@ -1,5 +1,15 @@
+*.png
 *.jpg
 *.npy
 *.h5
 *.json
 *.mat
+*.zip
+/models/
+./models/
+/models
+/data
+./data/
+*.token
+*.tfmodel
+
