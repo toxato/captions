@@ -12,4 +12,7 @@
 ./data/
 *.token
 *.tfmodel
-
+*.meta
+*.ckpt
+*.ckt
+*.cpt
