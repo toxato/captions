@@ -83,9 +83,9 @@ It's most likely because you installed Docker using sudo permissions with a pack
 
 # The Notebooks
 There are three notebooks:
-* `1. O'Reilly Training.ipynb` - Contains code to train a TensorFlow caption generator from a VGG16 word embedding as described in our article. *Note:* you must run this notebook's `train` method before running any of the other notebooks in order to generate a mapping between integers and our vocabulary's words that will be reused in the other notebooks.
-* `2. O'Reilly Generate.ipynb` - Contains the same code as `1. O'Reilly Training.ipynb` except it introduces functionality to generate captions from an image embedding (as opposed to just being able to train on captions). Functions as a sanity check for the quality of captions we are generating.
-* `3. O'Reilly Generate from image.ipynb` - Builds on the previous notebook, except instead of feeding an image embedding to our caption generation model, it first feeds an image to the VGG-16 Convolutional Neural Network to generate an image feature embedding. This gives us an end-to-end pipeline for going from an image to a caption.
+* `Training.ipynb` - Contains code to train a TensorFlow caption generator from a VGG16 word embedding as described in our article. *Note:* you must run this notebook's `train` method before running any of the other notebooks in order to generate a mapping between integers and our vocabulary's words that will be reused in the other notebooks.
+* `Generate.ipynb` - Contains the same code as `1. O'Reilly Training.ipynb` except it introduces functionality to generate captions from an image embedding (as opposed to just being able to train on captions). Functions as a sanity check for the quality of captions we are generating.
+* `Generate from image.ipynb` - Builds on the previous notebook, except instead of feeding an image embedding to our caption generation model, it first feeds an image to the VGG-16 Convolutional Neural Network to generate an image feature embedding. This gives us an end-to-end pipeline for going from an image to a caption.
  * In order to run the test notebook edit the image path in the ipynb (more details in the `.ipynb` itself).
 
 # Additional Downloads:
@@ -99,3 +99,5 @@ Place all of these downloads in the `./data/` directory.
 
 # Pretrained Weights:
 We've trained the caption generator (w/o training VGG-16 End2End) to 500 epochs, and we've placed the resulting checkpoint files in `./models/tensorflow`. You should experience an average reconstruction loss of ~1.75-1.85.
+
+Based on O'Reilly's implementation.
